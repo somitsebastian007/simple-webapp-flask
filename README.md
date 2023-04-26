@@ -13,9 +13,9 @@ This is used in the demonstration of development of Ansible Playbooks.
   
   Python and its dependencies
 
-   apt-get update
-   apt-get install -y python3 
-   apt-get install -y python3-pip
+   apt-get update                  #Checks and update new packages in the OS 
+   apt-get install -y python3      # Install Python
+   apt-get install -y python3-pip  # Install pip
 
    
 ## 2. Install and Configure Web Server
