@@ -13,7 +13,7 @@ This is used in the demonstration of development of Ansible Playbooks.
   
   Python and its dependencies
 
-   Checks and update new packages in the OS
+   Checks and update new packages in the OS       
    apt-get update   
 
    Install Python                
