@@ -20,7 +20,7 @@ Install Python
     apt-get install -y python3
 
 Install pip      
-    apt-get install -y python3-pip**  
+    apt-get install -y python3-pip
 
    
 ## 2. Install and Configure Web Server
