@@ -15,8 +15,10 @@ This is used in the demonstration of development of Ansible Playbooks.
 
 Checks and update new packages in the OS       
     apt-get update
+
 Install Python                
     apt-get install -y python3
+    
 Install pip      
     apt-get install -y python3-pip
 
