@@ -17,5 +17,8 @@ RUN pip3 install flask
 #COPY APPLICATION FILE
 COPY app.py /opt/
 
+#OPEN PORT 8080
+EXPOSE 8080
+
 #RUN APP
 ENTRYPOINT FLASK_APP=/opt/app.py flask run --host=0.0.0.0 --port=8080
