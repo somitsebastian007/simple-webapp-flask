@@ -1,6 +1,9 @@
 #BASE IMAGE
 FROM ubuntu:20.04
 
+#Set Enviornmnet Variable
+ENV PORT_NUMBER=8080
+
 #### ADD DEPENDENCIES ####
 # Retrive latest packages
 RUN apt-get update
@@ -18,7 +21,7 @@ RUN pip3 install flask
 COPY app.py /opt/
 
 #OPEN PORT 8080
-EXPOSE 8080
+EXPOSE ${PORT_NUMBER}
 
 #RUN APP
-ENTRYPOINT FLASK_APP=/opt/app.py flask run --host=0.0.0.0 --port=8080
+ENTRYPOINT FLASK_APP=/opt/app.py flask run --host=0.0.0.0 --port=${PORT_NUMBER}
